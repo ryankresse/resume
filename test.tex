@@ -1,19 +1,24 @@
 \documentclass[10pt]{article}
 %\usepackage[showframe]{geometry}
 \usepackage{geometry}
-
-\usepackage{nopageno}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+%\usepackage{nopageno}
 \usepackage{enumitem}
 \usepackage{verbatim}
 \usepackage{multicol}
 \frenchspacing
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage\ of \pageref{LastPage} }
+
 \setcounter{secnumdepth}{0}
 \begin{document}
 	%\title{Ryan Kresse}
 	%\date{}
 	%\maketitle
 	\begin{flushleft}
-		{\Huge Ryan Kresse}
+		\textbf{{\Huge Ryan Kresse}}
 	\end{flushleft}	%rkresse53@gmail.com - ryankresse.com - github.com/ryankresse
 	
 	
@@ -28,6 +33,14 @@
 	\section{Summary}
 		Frontend developer with experience building complex, single page Angular applications. Life-long student particularly passionate about data, statistics and machine learning. Craftsman excited by building things well and solving difficult
 		problems.
+	
+	\section{Contact and Links}
+		\begin{itemize}[noitemsep]
+			\item rkresse53@gmail.com
+			\item ryankresse.com
+			\item github.com/ryankresse
+		\end{itemize}
+	
 	
 	\section{Technical Skills}
 		\begin{multicols}{4}
@@ -96,6 +109,5 @@
 					
 				
 		\end{itemize}
-		
-			
+	
 \end{document}

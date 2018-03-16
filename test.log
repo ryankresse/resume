@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.28)  15 MAR 2018 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.28)  16 MAR 2018 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -53,12 +53,24 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/nopageno/nopageno.sty
-Package: nopageno 1989/01/01 no page numbers (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip43
+\labelindent=\skip52
 \enit@outerparindent=\dimen111
 \enit@toks=\toks16
 \enit@inbox=\box26
@@ -84,8 +96,8 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \page@free=\dimen114
 \premulticols=\dimen115
 \postmulticols=\dimen116
-\multicolsep=\skip44
-\multicolbaselineskip=\skip45
+\multicolsep=\skip53
+\multicolbaselineskip=\skip54
 \partial@page=\box28
 \last@line=\box29
 \maxbalancingoverflow=\dimen117
@@ -121,18 +133,18 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 ) (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -168,37 +180,41 @@ LaTeX Font Info:    ... okay on input line 11.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 16.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-test.aux) ) 
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+AED: lastpage setting LastPage
+[2] (./test.aux) ) 
 Here is how much of TeX's memory you used:
- 1178 strings out of 493013
- 17579 string characters out of 6133328
- 85977 words of memory out of 5000000
- 4767 multiletter control sequences out of 15000+600000
- 5457 words of font info for 20 fonts, out of 8000000 for 9000
+ 1341 strings out of 493013
+ 19487 string characters out of 6133328
+ 89716 words of memory out of 5000000
+ 4927 multiletter control sequences out of 15000+600000
+ 5465 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,4n,19p,604b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb>
-Output written on test.pdf (2 pages, 68307 bytes).
+ 23i,10n,43p,604b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on test.pdf (2 pages, 61095 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 27 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
