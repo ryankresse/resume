@@ -5,11 +5,17 @@
 \usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{verbatim}
+\usepackage{titlesec}
+\usepackage{setspace}
+\setlist[itemize]{noitemsep, topsep=10pt}
+
+\titlespacing*{\subsection}{0pt}{*1}{*.2}
+\titlespacing*{\section}{0pt}{*1.5}{*1.5}
 \usepackage{multicol}
 \frenchspacing
 \renewcommand{\familydefault}{\sfdefault}
 \cfoot{\thepage\ of \pageref{LastPage} }
-
+\setlength\multicolsep{0pt}
 \setcounter{secnumdepth}{0}
 \usepackage{hyperref}
 \hypersetup{
@@ -19,13 +25,11 @@
 	urlcolor=cyan,
 }
 \begin{document}
-	%\title{Ryan Kresse}
-	%\date{}
-	%\maketitle
-	\begin{flushleft}
-		\textbf{{\Huge Ryan Kresse}}
-	\end{flushleft}
-	\emph{rkresse53@gmail.com, 843-696-8459}
+	
+	\noindent \textbf{{\Huge Ryan Kresse}}
+	\smallskip
+	
+	\noindent {\fontsize{10pt}{\parskip}\emph{rkresse53@gmail.com $\vert$ ryankresse.com $\vert$ github.com/ryankresse $\vert$ 843-696-8459}}
 	
 	\section{Summary}
 		Professional programmer knowledgeable in statistics and machine learning through self-study and independent projects.
@@ -41,46 +45,40 @@
 	
 	\section{Technical Skills}
 		\begin{multicols}{4}
-			\begin{itemize}[noitemsep]
-				
+			\begin{itemize}
 				\item Python 				
 				\item Numpy 
 				\item Scikit-learn 
 				\item Pytorch
-				\item Pandas 
-				\item Matplotlib
 				\columnbreak
 				
+				\item Pandas 
 				\item Sql 
 				\item Unix 
-				\item AWS
-				\item Tensorflow 
-				 
 				\item PySpark
-				\item Docker
 				\columnbreak
 				
-				\item Seaborn 			
-				\item Javascript 
-				\item Angular 
-				\item HTML 
-				\item CSS 
-				\item Karma 
-				\columnbreak 
+				\item AWS
+				\item Tensorflow 
+				\item Seaborn
+				\item Matplotlib			
+								 
+							
 				
-				\item Jasmine 
-				\item Gulp 
-				\item Webpack
-				\item Sass
-				\item Node 
-				\item Npm 
+				\columnbreak 
+				\item Docker
+				\item Javascript 
+				\item CSS
+				\item HTML 
+				
+				 				
 				\columnbreak 
 				
 			\end{itemize}
 		\end{multicols}
 	
 	\section{Independent Projects and Coursework}
-		\begin{itemize}[noitemsep]
+		\begin{itemize}
 			\item Trained a \href{https://github.com/ryankresse/ames_housing}{lasso regression model and a stacking ensemble} to score in the top 10\% of a Kaggle competition
 			\item \href{https://github.com/ryankresse/invasive_species}{Fine-tuned a vgg-16 neural network} for a .97 AUC in detecting the presence of invasive species in images of the rain forest 
 			\item \href{https://github.com/ryankresse/fast_style_transfer_pytorch}{Implemented the fast style transfer algorithm} of Johnson, Alahi and Fei-Fei in Pytorch
@@ -145,8 +143,9 @@
 			
 		\end{comment}
 	\section{Experience}
-		\subsection{\normalsize{Senior Application Developer, Highmark Health, Pittsburgh, PA, July 2015--current}}
-		\begin{itemize}[noitemsep]
+			\subsection{\normalsize{Senior Application Developer, Highmark Health}}
+			{\fontsize{2pt}{\parskip} {Pittsburgh, PA, 2015--current}}
+		\begin{itemize}
 		\item Build dynamic, single page applications with Javascript (Angular), HTML and CSS
 		\item Major contributor to the release of an app that will save company ~650K annually
 		\item Joined a multi-year project in the middle of development and quickly learned the large and complex codebase, becoming the lead UI developer and guiding the UI team to the application's successful release
@@ -155,14 +154,15 @@
 		\item Write clean code, as well as unit tests to ensure correctness and prevent regressions
 		\end{itemize}
 		
-	\subsection{\normalsize{Writer, Moosylvania Marketing, St. Louis, MO, Aug. 2012--Apr. 2015}}
-	\begin{itemize}[noitemsep]
+	\subsection{\normalsize{Writer, Moosylvania Marketing}}
+	St. Louis, MO, 2012--2015
+	\begin{itemize}
 		\item Lead writer on PayPal, helping grow it from a small account into agency\rq s most important and profitable client
 		\item Other clients included Enterprise Rent-A-Car, Capital One and Drambuie
 	\end{itemize}
 	
 	\section{Education}
-		\begin{itemize}[noitemsep]
+		\begin{itemize}
 			\item University of Missouri, MA Strategic Communication, 2012
 			\item Emory University, BA Anthropology and Music, 2009
 					
