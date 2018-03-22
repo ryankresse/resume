@@ -1,16 +1,18 @@
 \documentclass[11pt]{article}
 %\usepackage[showframe]{geometry}
-\usepackage{geometry}
+\usepackage[top=.9in, bottom=.9in, left=1.5in, right=1.5in]{geometry}
 \usepackage{lastpage}
+\usepackage{nopageno}
 \usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{verbatim}
 \usepackage{titlesec}
 \usepackage{setspace}
 \setlist[itemize]{noitemsep, topsep=10pt}
-
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\definecolor{RyanRed}{RGB}{44,65,109}
 \titlespacing*{\subsection}{0pt}{*1}{*.2}
-\titlespacing*{\section}{0pt}{*1.5}{*1.5}
+\titlespacing*{\section}{0pt}{*1.5}{*1}
 \usepackage{multicol}
 \frenchspacing
 \renewcommand{\familydefault}{\sfdefault}
@@ -22,14 +24,14 @@
 	colorlinks=true,
 	linkcolor=blue,
 	filecolor=magenta,      
-	urlcolor=cyan,
+	urlcolor=RoyalBlue,
 }
 \begin{document}
 	
-	\noindent \textbf{{\Huge Ryan Kresse}}
+	\noindent \textbf{{\fontsize{38pt}{\parskip}\selectfont \color{RyanRed} Ryan Kresse}}
 	\smallskip
 	
-	\noindent {\fontsize{10pt}{\parskip}\emph{rkresse53@gmail.com $\vert$ ryankresse.com $\vert$ github.com/ryankresse $\vert$ 843-696-8459}}
+	\noindent {\fontsize{10pt}{\parskip}\selectfont rkresse53@gmail.com $\vert$ ryankresse.com $\vert$ github.com/ryankresse $\vert$ 843-696-8459}
 	
 	\section{Summary}
 		Professional programmer knowledgeable in statistics and machine learning through self-study and independent projects.
@@ -60,7 +62,7 @@
 				
 				\item AWS
 				\item Tensorflow 
-				\item Seaborn
+				\item Git
 				\item Matplotlib			
 								 
 							
@@ -80,82 +82,25 @@
 	\section{Independent Projects and Coursework}
 		\begin{itemize}
 			\item Trained a \href{https://github.com/ryankresse/ames_housing}{lasso regression model and a stacking ensemble} to score in the top 10\% of a Kaggle competition
-			\item \href{https://github.com/ryankresse/invasive_species}{Fine-tuned a vgg-16 neural network} for a .97 AUC in detecting the presence of invasive species in images of the rain forest 
-			\item \href{https://github.com/ryankresse/fast_style_transfer_pytorch}{Implemented the fast style transfer algorithm} of Johnson, Alahi and Fei-Fei in Pytorch
-			\item \href{https://github.com/ryankresse/sf-crime}{Trained a multi-class logistic regression classifier} to predict the category of a crime given when and where it took place
+			\item \href{https://github.com/ryankresse/invasive_species}{Fine-tuned a vgg-16 neural network} for a .97 AUC in an image classification task 
+			\item Implemented the \href{https://github.com/ryankresse/fast_style_transfer_pytorch}{fast style transfer algorithm} in Pytorch
+			\item \href{https://github.com/ryankresse/sf-crime}{Trained a multi-class logistic regression model} to predict the category of a crime from when and where it occurred
 			\item Courses: Coursera Machine Learning, Harvard CS109 Data Science, Coursera Statistics With R, Stanford CS231 Convolutional Neural Networks, Practical Deep Learning For Coders, Stanford CS224N NLP with Deep Neural Networks
-			\begin{comment}
-			\begin{itemize}[noitemsep]
-				\item Coursera: Machine Learning 
-				\item Harvard CS109: Data Science
-				\item Coursera: Statistics With R 
-				\item Stanford CS231: Convolutional Neural Networks
-				\item Practical Deep Learning For Coders 
-				\item Stanford CS224N: NLP with Deep Neural Networks
-			\end{itemize}
-			\end{comment}
 		\end{itemize}
-		\begin{comment}
-		\begin{itemize}[noitemsep]
-			\item Fast-style transfer
-				\begin{itemize}[noitemsep]
-					\item Implemented the fast-style transfer algorithm of .. in pytorch
-				\end{itemize}
-			\item Ames Housing Predictions
-				\begin{itemize}[noitemsep]
-					\item Trained .. to predict housing prices in Ames Iowa
-				\end{itemize}
-			\item Invasive species image classification
-				\begin{itemize}[noitemsep]
-					\item Trained a convolutional neural network to detect whether invasive species in images of the rain forest
-				\end{itemize}
-					
-			\item San Francisco Crime
-				\begin{itemize}[noitemsep]
-					\item Predicted the category of individual crimes given attributes like where and when they occurred
-				\end{itemize}			
-		\end{itemize}
-		\end{comment}
-		\begin{comment}
 		
-		\subsection{\normalsize{Fast-style transfer}}
-			\begin{itemize}
-				\item Implemented the fast-style transfer algorithm of .. in pytorch
-			\end{itemize}
-						
-		\subsection{\normalsize{Ames Housing Prices}}
-			\begin{itemize}
-				\item Trained .. to predict housing prices in Ames Iowa
-			\end{itemize}
-			
-		\subsection{\normalsize{Invasive species detection}}
-			\begin{itemize}
-				\item 
-				Trained a convolutional neural network to detect the presence of invasive species in images of the rain forest
-			\end{itemize}
-			
-		\subsection{\normalsize{San Francisco Crime}}
-			\begin{itemize}
-				\item 
-				Predicted the category of individual crimes given attributes like where and when they occurred
-			\end{itemize}
-			
-			
-		\end{comment}
 	\section{Experience}
 			\subsection{\normalsize{Senior Application Developer, Highmark Health}}
-			{\fontsize{2pt}{\parskip} {Pittsburgh, PA, 2015--current}}
+			{\fontsize{10pt}{\parskip}\selectfont Pittsburgh, PA, 2015--current}
 		\begin{itemize}
-		\item Build dynamic, single page applications with Javascript (Angular), HTML and CSS
-		\item Major contributor to the release of an app that will save company ~650K annually
-		\item Joined a multi-year project in the middle of development and quickly learned the large and complex codebase, becoming the lead UI developer and guiding the UI team to the application's successful release
-		\item Teach new UI developers, helping them become successful contributors to the team
-		\item Advise and coach other teams as they get their new Angular projects off the ground
-		\item Write clean code, as well as unit tests to ensure correctness and prevent regressions
+		\item Build single page web applications with Javascript, HTML, CSS and Java
+		\item Major contributor to the release of an app that will save company 650K annually
+		\item Joined a multi-year, complex project in the middle of development and guided the UI team to the application's successful release
+		\item Teach new UI developers, helping them become productive and successful
+		\item Coach other teams as they start new projects
 		\end{itemize}
 		
 	\subsection{\normalsize{Writer, Moosylvania Marketing}}
-	St. Louis, MO, 2012--2015
+	{\fontsize{10pt}{\parskip}\selectfont St. Louis, MO, 2012--2015}
 	\begin{itemize}
 		\item Lead writer on PayPal, helping grow it from a small account into agency\rq s most important and profitable client
 		\item Other clients included Enterprise Rent-A-Car, Capital One and Drambuie
