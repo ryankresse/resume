@@ -8,11 +8,13 @@
 \usepackage{verbatim}
 \usepackage{titlesec}
 \usepackage{setspace}
-\setlist[itemize]{noitemsep, topsep=10pt}
+\setlist[itemize]{noitemsep, topsep=5pt}
 \usepackage[usenames,dvipsnames,svgnames]{xcolor}
 \definecolor{RyanRed}{RGB}{44,65,109}
-\titlespacing*{\subsection}{0pt}{*1}{*.2}
-\titlespacing*{\section}{0pt}{*1.5}{*1}
+\titleformat*{\section}{\fontsize{14pt}{\parskip}\bfseries\selectfont}
+
+\titlespacing*{\subsection}{0pt}{*1}{0pt}
+\titlespacing*{\section}{0pt}{*2.5}{*1}
 \usepackage{multicol}
 \frenchspacing
 \renewcommand{\familydefault}{\sfdefault}
