@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 %\usepackage[showframe]{geometry}
-\usepackage[top=.9in, bottom=.9in, left=1.5in, right=1.5in]{geometry}
+\usepackage[top=.9in, bottom=.9in, left=1.4in, right=1.4in]{geometry}
 \usepackage{lastpage}
 \usepackage{nopageno}
 \usepackage{fancyhdr}
@@ -8,16 +8,24 @@
 \usepackage{verbatim}
 \usepackage{titlesec}
 \usepackage{setspace}
+\usepackage{fontspec}
+\setmainfont{OpenSans-Regular}
 \setlist[itemize]{noitemsep, topsep=5pt}
 \usepackage[usenames,dvipsnames,svgnames]{xcolor}
 \definecolor{RyanRed}{RGB}{44,65,109}
-\titleformat*{\section}{\fontsize{14pt}{\parskip}\bfseries\selectfont}
+\newfontfamily\sectionfont[]{OpenSans-Bold}
+\newfontfamily\subSectionfont{OpenSans-Regular}
+
+\newfontfamily\titleFont{OpenSans-Bold}
+
+\titleformat*{\section}{\fontsize{12pt}{\parskip}\sectionfont\selectfont}
+\titleformat*{\subsection}{\fontsize{12pt}{\parskip}\subSectionfont\selectfont}
 
 \titlespacing*{\subsection}{0pt}{*1}{0pt}
 \titlespacing*{\section}{0pt}{*2.5}{*1}
 \usepackage{multicol}
 \frenchspacing
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 \cfoot{\thepage\ of \pageref{LastPage} }
 \setlength\multicolsep{0pt}
 \setcounter{secnumdepth}{0}
@@ -30,11 +38,15 @@
 }
 \begin{document}
 	
-	\noindent \textbf{{\fontsize{38pt}{\parskip}\selectfont \color{RyanRed} Ryan Kresse}}
+	\flushleft{
+		\fontsize{24pt}{\parskip}
+		\titleFont \selectfont \color{RyanRed} Ryan Kresse
+	}
+	
 	\smallskip
 	
-	\noindent {\fontsize{10pt}{\parskip}\selectfont rkresse53@gmail.com $\vert$ ryankresse.com $\vert$ github.com/ryankresse $\vert$ 843-696-8459}
-	
+	\noindent {\fontsize{8pt}{\parskip}\selectfont rkresse53@gmail.com $\vert$ ryankresse.com $\vert$ github.com/ryankresse $\vert$ 843-696-8459}
+
 	\section{Summary}
 		Software developer knowledgeable in statistics and machine learning. Lifelong student passionate about data and math. Learn more about me at \href{http://ryankresse.com/blog}{ryankresse.com} or \href{https://github.com/ryankresse}{github.com/ryankresse}.	
 	\section{Technical Skills}
@@ -74,7 +86,7 @@
 	
 	\section{Data Science Projects and Coursework}
 		\begin{itemize}
-			\item Trained various \href{https://github.com/ryankresse/ames_housing}{ regression models and a stacking ensemble} to accurately predict the sales prices of houses in Ames, Iowa.
+			\item Trained \href{https://github.com/ryankresse/ames_housing}{ regression models and a stacking ensemble} to accurately predict the sales prices of houses in Ames, Iowa.
 			\item \href{https://github.com/ryankresse/invasive_species}{Fine-tuned a vgg-16 neural network} for a .97 AUC in an image classification task 
 			\item Implemented the \href{https://github.com/ryankresse/fast_style_transfer_pytorch}{fast style transfer algorithm} in PyTorch
 			\item \href{https://github.com/ryankresse/sf-crime}{Trained a multi-class logistic regression model} to predict the category of a crime from when and where it occurred
@@ -85,7 +97,7 @@
 			\subsection{\normalsize{Senior Applications Developer, Highmark Health}}
 			{\fontsize{10pt}{\parskip}\selectfont Pittsburgh, PA, 2015--current}
 		\begin{itemize}
-		\item Build single page web applications with Javascript, HTML, CSS and Java
+		\item Build complex business applications with Javascript, HTML, CSS and Java
 		\item Major contributor to the release of an app that will save company 650K annually
 		\item Joined a multi-year, complex project in the middle of development and guided the UI team to the application's successful release
 		\item Teach new UI developers, helping them become productive and successful
